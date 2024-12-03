@@ -1,0 +1,20 @@
+body{
+    background-color: aliceblue;
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+    }
+    .telas{
+        width: 100%;
+    }
+    .X{
+        background: none;
+        border: 10px;
+        padding: none;
+        align-items: self-start;
+        position: fixed;
+        margin: 20px;
+        
+        
+    }
+    

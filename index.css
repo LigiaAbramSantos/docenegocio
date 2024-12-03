@@ -1,0 +1,999 @@
+* {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body{
+    background-color: #111;
+
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/*--------------------------------------MENU/--------------------------------------*/
+#menu {
+    border-radius: 0px 0px 32px 32px;
+    background: rgba(0, 0, 0, 0.74);
+    width: 1040px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000; /* Valor alto para sobrepor outros elementos */
+}
+
+
+.menusis {
+    display: flex;
+    width: 1040px;
+    height: 72px;
+    justify-content: center;
+    align-items: center;
+    gap: 56px;
+    flex-shrink: 0;
+
+}
+
+.menusitos {
+    color: #FABDDD;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+
+}
+
+.menusitos:hover {
+    color: #F68887;
+
+}
+/*--------------------------------------/MENU--------------------------------------*/
+
+
+
+
+
+
+
+
+
+/*--------------------------------------INICIO/--------------------------------------*/
+#intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.intro-content {
+    display: flex;
+    background-color: #111;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.image {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.image img {
+    width: 519px;
+    border-radius: 10px;
+}
+
+.imagem-resize {
+    width: 519px;
+    height: 683px;
+    flex-shrink: 0;
+    margin: 40px 0 0 0;
+
+}
+
+.text {
+    flex: 1;
+    color: #FBF6D8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.text h1 {
+    font-size: 2.5rem;
+    color: #FABDDD;
+    margin-bottom: 20px;
+    font-family: "Fascinate", system-ui;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.text p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.text strong{
+    font-family: "Fascinate", system-ui;
+    color: #FBF6D8;
+}
+
+
+.text button {
+    background-color: #FABDDD;
+    color: #5C311E;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 64px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.text button:hover {
+    background-color: #5C311E;
+    color: #FABDDD;
+}
+
+/*--------------------------------------/INICIO--------------------------------------*/
+
+
+
+
+/*--------------------------------------SERVIÇOS/--------------------------------------*/
+
+#services{
+    width: 100%;
+    text-align: center;
+    padding: 50px 20px;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #171717;
+
+}
+.titulo-serviços{
+    width: 1200px;
+    margin-bottom: 64px;
+}
+
+
+.service-items {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+}
+
+.service-item {
+    max-width: 200px;
+    text-align: center;
+}
+
+.service-item img {
+    width: 90px;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 16px;
+
+}
+
+.service-item h3 {
+    color: #FBF6D8;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    color: #FBF6D8;
+}
+/*--------------------------------------/SERVIÇOS--------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------SOBRENOS/--------------------------------------*/
+#sobrenos {
+    width: 100%;
+    height: auto;
+    padding-bottom: 100px;
+}
+
+.sobrenostexto {
+    color: #FABDDD;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: Poppins;
+    text-align: center;
+    margin: 80px auto;
+    
+}
+
+
+
+
+
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    height: auto; /* Adicione se o tamanho vertical parecer desproporcional */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carousel-item {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 45%;
+}
+
+.carousel-item p {
+    width: 90%;
+    font-size: 20px;
+    padding: 0 16px;
+}
+
+.carousel-button {
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel-button.prev {
+    left: 4px;
+    cursor: pointer;
+    position: absolute;
+    width: 40px;
+    color: #FABDDD;
+    background-color: #FBF6D8;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 24px;
+    user-select: none;
+    align-content: center;
+}
+
+.carousel-button.next {
+    right: 4px;
+    cursor: pointer;
+    position: absolute;
+    width: 40px;
+    color: #FABDDD;
+    background-color: #FBF6D8;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 24px;
+    user-select: none;
+    align-content: center;
+}
+
+.texto {
+    display: block;
+    font-size: 20px;
+    width: 55%;
+    padding: 0 16px;
+    color: #FBF6D8;
+
+}
+
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.indicator {
+    width: 11px;
+    height: 11px;
+    margin: 32px 4px;
+    border-radius: 50%;
+    background: #FBF6D8;
+    border: none;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background: #F68887;
+}
+
+/*--------------------------------------/SOBRENOS--------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------PACOTES/--------------------------------------*/
+#frase {
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 832px;
+    padding: 20px;
+    
+}
+
+#frase h1 {
+    font-size: 1.8em;
+    color: #ffffff;
+    text-align: center;
+}
+
+#frase strong {
+    color: #FFF3D0;
+    font-family: 'Poppins', light;
+    align-items: center;
+}
+
+.plano {
+    color: #fff;
+}
+
+.basico {
+    background-color: #FABDDD;
+    color: #5C311E;
+    font-family: 'Poppins', bold;
+    width: 310px;
+    height: 478px;
+
+}
+
+.padrao {
+    background-color: #5C311E;
+    color: #FABDDD;
+    width: 310px;
+    height: 478px;
+}
+
+.premium {
+    background-color: #F68887;
+    color: #FFF3D0;
+    width: 310px;
+    height: 478px;
+}
+
+.diamond {
+    background-color: #FFF3D0;
+    color: #F68887;
+    width: 310px;
+    height: 478px;
+
+}
+
+.plano .preco {
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.plano ul {
+    list-style: none;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.header-text {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.negocio {
+    color: #FABDDD;
+    font-family: 'Poppins', bold;
+}
+
+.negocio-strong {
+    color: #FFF3D0;
+    font-family: 'Poppins', bold;
+}
+
+.preco {
+    font-family: 'Poppins', bold;
+}
+
+.ul {
+    font-family: 'Poppins', bold;
+}
+
+.planos {
+    margin: 48px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.plano h2 {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.plano.basico h2 {
+    background-color: #5C311E;
+    /* Cor de fundo para o plano Básico */
+    color: #FABDDD;
+    font-family: 'Poppins', bold;
+}
+
+.plano.padrao h2 {
+    background-color: #FABDDD;
+    /* Cor de fundo para o plano Padrão */
+    color: #5C311E;
+    font-family: 'Poppins', bold;
+}
+
+.plano.premium h2 {
+    background-color: #FFF3D0;
+    /* Cor de fundo para o plano Premium */
+    color: #F68887;
+    font-family: 'Poppins', bold;
+}
+
+.plano.diamond h2 {
+    background-color: #F68887;
+    /* Cor de fundo para o plano Diamond */
+    color: #FFF3D0;
+    font-family: 'Poppins', bold;
+
+}
+
+.plano {
+    width: 250px;
+    padding: 20px;
+    border-radius: 20px;
+    /* Bordas arredondadas do contêiner */
+    text-align: center;
+}
+
+.plano h2 {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 10px 0;
+    border-radius: 15px;
+    /* Bordas arredondadas para o título */
+}
+
+ul {
+    list-style-position: inside;
+    /* Faz com que o ponto fique dentro do contêiner da lista */
+    padding-left: 0;
+    /* Remove o espaçamento padrão à esquerda da lista */
+    margin: 0;
+}
+
+li {
+    text-align: left;
+    /* Alinha o texto dos itens da lista à esquerda */
+    margin: 5px 0;
+    /* Espaçamento entre os itens */
+}
+
+p {
+    text-align: left;
+    /* Alinha o texto à esquerda */
+    margin: 10px 0;
+    /* Recuo da primeira linha do parágrafo */
+    line-height: 1.4;
+
+}
+
+ul {
+    list-style-type: square;
+}
+
+ul li {
+    font-weight: bold;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+/* Efeito ao passar o mouse em cada plano */
+.plano:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.preco {
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.basiquinho {
+    font-size: 12px;
+}
+
+.padraozinha {
+    font-size: 12px;
+}
+
+.premi {
+    font-size: 12px;
+}
+
+.diamo {
+    font-size: 12px;
+}
+
+/* Estilo geral para os planos */
+.planos {
+    gap: 32px;
+    padding-top: 10px;
+    gap: 20px;
+    /* Espaçamento entre as caixas */
+    justify-content: center;
+    /* Centraliza as caixas no contêiner */
+    flex-wrap: nowrap;
+    /* Garante que todas as caixas fiquem em uma linha */
+}
+
+/* Estilo de cada cartão de plano */
+.plano {
+    position: relative;
+    /* Necessário para posicionar os elementos dentro */
+    width: 310px;
+    height: 478px;
+    padding: 20px;
+}
+
+/* Estilo para os títulos (BÁSICO, PADRÃO, etc.) */
+.plano h2 {
+    top: -15px;
+    /* Levemente acima do topo do cartão */
+    left: 15px;
+    /* Alinhado à esquerda */
+    font-size: 16px;
+}
+
+/* Estilo dos preços */
+.preco {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+/* Estilo dos textos descritivos */
+.basiquinho,
+.padraozinha,
+.premi,
+.diamo {
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* Estilo das listas */
+ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+/*--------------------------------------/PACOTES--------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------PORTFOLIO/--------------------------------------*/
+
+#portfolio{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    background-color: #171717;
+    padding: 96px;
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 110px;
+}
+
+.tituloportfolio{
+    color: #FABDDD;
+    font-size: 40px;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+.icons {
+    gap: 24px;
+    margin: 24px;
+    width: 230px;
+}
+
+.btn {
+    background: none;
+    border: none;
+}
+.btn :hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+}
+/*--------------------------------------/PORTFOLIO--------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------CONTATO/--------------------------------------*/
+#contato {
+    width: 100%;
+    background-image: url(ligia/imagens/contato/fundo_contato-desktop.svg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tudocontato {
+    background-color: rgb(246, 136, 135, 0.7);
+    width: 1423px;
+    height: 472px;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 96px;
+}
+
+
+
+.esquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+
+
+
+
+
+.titulo1 {
+    color: #FBF6D8;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.subtitulo {
+    color: #FBF6D8;
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+
+
+.formulario input[type="text"] {
+    border-radius: 4px;
+    background-color: #F7F5E4;
+    display: flex;
+    width: 544px;
+    padding: 8px 16px;
+    align-items: center;
+    gap: 8px;
+    border: none;
+}
+
+.campos ::placeholder {
+    color: #F68887;
+    font-size: 16px;
+    align-items: center;
+}
+
+.campos {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 20px;
+}
+
+
+label {
+    color: #FBF6D8;
+}
+
+
+/* Esconde o checkbox padrão */
+.privacidade {
+    display: none;
+}
+
+
+label::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    background-color: #FBF6D8;
+    vertical-align: middle;
+    transition: background-color 0.3s, border-color 0.3s;
+    cursor: pointer;
+}
+
+.privacidade:checked+label::before {
+    background-color: #FBF6D8;
+    content: "✔";
+    color: #5C311E;
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    /* Centraliza o checkmark verticalmente */
+}
+
+
+
+
+
+.politicaprivacidade u {
+    text-decoration-color: #5C311E;
+}
+
+.politicaprivacidade {
+    color: #5C311E;
+}
+
+.politicaprivacidade :hover {
+    color: #441F10;
+}
+
+
+
+.concordeenvie {
+    display: flex;
+    gap: 24px;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.enviar {
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 16px;
+    background-color: #5C311E;
+    color: #FBF6D8;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    border: none;
+}
+
+
+.enviar:hover {
+    background-color: #441F10;
+}
+
+
+
+
+
+.direita {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    text-align: left;
+
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+
+.telefone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.zap {
+    display: inline-flex;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #20C241;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    border-radius: 24px;
+    background-color: #C2FFCF;
+    border: none;
+}
+
+.zap:hover {
+    background-color: #a9e5b6;
+}
+
+
+.numeroemailezap {
+    display: flex;
+    gap: 40px;
+}
+/*--------------------------------------/CONTATO--------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------RODAPE/--------------------------------------*/
+#rodape {
+    width: 100%;
+    height: 72px;
+    background-color: #171717;
+    align-content: center;
+    margin: 0 auto;
+    bottom: 0;
+    left: 0;
+}
+
+.rodapeis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 56px;
+    flex-shrink: 0;
+    justify-content: space-between;
+    margin: 0 56px;
+}
+
+.redes {
+    display: inline-flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.copyright {
+    color: #FFF;
+    text-align: right;
+    font-family: Poppins;
+    font-size: 10px;
+}
+/*--------------------------------------/RODAPE--------------------------------------*/
